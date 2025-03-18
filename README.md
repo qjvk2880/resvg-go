@@ -8,7 +8,6 @@
   
   [![Go Reference](https://pkg.go.dev/badge/github.com/kanrichan/resvg-go.svg)](https://pkg.go.dev/github.com/kanrichan/resvg-go)
   [![Go Report Card](https://goreportcard.com/badge/github.com/kanrichan/resvg-go)](https://goreportcard.com/report/github.com/kanrichan/resvg-go)
-  [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 </div>
 
 ## Table of Contents
@@ -40,7 +39,7 @@
 
 `resvg-go` is an SVG renderer implemented in pure Go and WebAssembly without CGO dependencies. This library uses the [resvg](https://github.com/RazrFalcon/resvg) Rust library compiled to WebAssembly and invoked through Go's [wazero](https://github.com/tetratelabs/wazero) runtime.
 
-The library provides a complete solution for SVG rendering in Go applications, offering high-quality rendering with minimal dependencies. By leveraging WebAssembly, `resvg-go` achieves the performance and correctness of the Rust implementation while providing a pure Go API without CGO.
+The library provides SVG rendering features in Go applications, offering high-quality rendering with minimal dependencies. By leveraging WebAssembly, `resvg-go` achieves the performance and correctness of the Rust implementation while providing a pure Go API without CGO.
 
 ## Key Features
 
@@ -51,13 +50,8 @@ The library provides a complete solution for SVG rendering in Go applications, o
 - **Rendering Options**: Detailed rendering option customization
 - **High Performance**: Leverages the speed of the Rust resvg implementation
 - **Minimal Dependencies**: Only requires wazero as a dependency
-- **Safe Memory Management**: Automatic resource cleanup through defer patterns
 
 ## Installation
-
-### Prerequisites
-
-- Go 1.18 or higher (for generics support)
 
 ### Installing the Package
 
@@ -551,8 +545,6 @@ Please follow these guidelines when contributing:
 
 - [resvg](https://github.com/RazrFalcon/resvg) - an SVG rendering library written in Rust
 - [wazero](https://github.com/tetratelabs/wazero) - the zero dependency WebAssembly runtime for Go developers
-- [TinySkia](https://github.com/RazrFalcon/tiny-skia) - a small Skia subset used by resvg for rendering
-- [svgfilters](https://github.com/RazrFalcon/svgfilters) - a library for SVG filter effects used by resvg
 
 ## License
 
